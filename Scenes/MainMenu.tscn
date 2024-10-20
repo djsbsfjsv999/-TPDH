@@ -1,0 +1,1194 @@
+[gd_scene load_steps=36 format=3 uid="uid://bgfrslkb3kj5e"]
+
+[ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_hb0oq"]
+[ext_resource type="Texture2D" uid="uid://85j472mj7y3m" path="res://Images/Rectangle1.png" id="5_ok65b"]
+[ext_resource type="StyleBox" uid="uid://dd0cvg16mnkfx" path="res://Styles/StylePanel1.tres" id="6_1xwk5"]
+[ext_resource type="Texture2D" uid="uid://by5l6j6co4rsl" path="res://Images/Rectangle5.png" id="6_mvgyg"]
+[ext_resource type="Texture2D" uid="uid://chor6st64x3uj" path="res://Images/Icons/SettingsIcon2.png" id="6_nbgql"]
+[ext_resource type="StyleBox" uid="uid://cl04miix5nbso" path="res://Styles/StyleInput1.tres" id="7_rcbko"]
+[ext_resource type="Texture2D" uid="uid://cn865u8nkp8pc" path="res://Images/Icons/AccountIcon.png" id="8_atb2h"]
+[ext_resource type="StyleBox" uid="uid://b6dgccb0lig6b" path="res://Styles/StyleButton1.tres" id="8_r84fj"]
+[ext_resource type="StyleBox" uid="uid://ca8jd8d7dqdms" path="res://Styles/StyleButton2.tres" id="9_3qjar"]
+[ext_resource type="Texture2D" uid="uid://dtm5xepbp6k8m" path="res://Images/Rectangle3.png" id="9_h2jx7"]
+[ext_resource type="Texture2D" uid="uid://bfqympbnpg04j" path="res://Images/LeftMenu.png" id="9_onp4b"]
+[ext_resource type="Texture2D" uid="uid://bsuikotg1vjs1" path="res://Images/Icons/HellBoardIcon.png" id="10_h6vsb"]
+[ext_resource type="Texture2D" uid="uid://e5dkbputbjk2" path="res://Images/Icons/Partyicon.png" id="11_ndjow"]
+[ext_resource type="StyleBox" uid="uid://dw83uwymjl4d4" path="res://Styles/StylePanel2.tres" id="11_vqpvr"]
+[ext_resource type="Texture2D" uid="uid://cwp17tg41lww1" path="res://Images/Icons/RatesIcon.png" id="12_0hikv"]
+[ext_resource type="FontFile" uid="uid://b71iknkyd1hqd" path="res://Styles/comfortaa-bold.ttf" id="12_d3osk"]
+[ext_resource type="Texture2D" uid="uid://banocqbautjfs" path="res://Images/Icons/VotingIcon.png" id="13_wb5db"]
+[ext_resource type="Texture2D" uid="uid://00e7ukia7w3k" path="res://Images/Icons/BookIcon.png" id="14_6swf5"]
+[ext_resource type="Texture2D" uid="uid://cuouofaj857ny" path="res://Images/Icons/StatsIcon.png" id="15_fcs27"]
+[ext_resource type="Texture2D" uid="uid://bceej1jhj5gnj" path="res://Images/Icons/SettingsIcon1.png" id="16_wpl8v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xqaxm"]
+bg_color = Color(0.470588, 0.470588, 0.470588, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f7gc8"]
+bg_color = Color(0.00392157, 0.556863, 0.564706, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iulcc"]
+texture = ExtResource("6_nbgql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mrf8y"]
+content_margin_left = 50.0
+content_margin_top = 280.0
+content_margin_right = 50.0
+
+[sub_resource type="Animation" id="Animation_4y2ci"]
+resource_name = "LeftPanel"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeftMenuPanel/LeftMenu:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-856, 891.092), Vector2(366, 891.092)]
+}
+
+[sub_resource type="Animation" id="Animation_b2vhb"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeftMenuPanel/LeftMenu:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-856, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LeftMenuPanel/LeftMenu:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(891.092, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TeamsMain:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TeamsMain:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PostsMain:anchors_preset")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("TeamsMain:anchors_preset")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TestMain:anchors_preset")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("VotingMain:anchors_preset")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("ReaderMain:anchors_preset")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("AnalyticsMain:anchors_preset")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bjwwe"]
+_data = {
+"LeftPanel": SubResource("Animation_4y2ci"),
+"RESET": SubResource("Animation_b2vhb")
+}
+
+[sub_resource type="Animation" id="Animation_tfd3h"]
+resource_name = "AnalyticsAppearing"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnalyticsMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1163, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_pspnu"]
+resource_name = "PostsAppearing"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PostsMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1882, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_7pkfb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TeamsMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1530, 63.0001)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PostsMain:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TestMain:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("VotingMain:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ReaderMain:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1162, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnalyticsMain:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3raaa"]
+resource_name = "ReaderAppearing"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ReaderMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1162, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_n1kyw"]
+resource_name = "TeamsAppearing"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TeamsMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1530, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4n0rb"]
+resource_name = "TestAppearing"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TestMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1280, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_obd18"]
+resource_name = "VotingAppearing"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VotingMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1162, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hvtll"]
+_data = {
+"AnalyticsAppearing": SubResource("Animation_tfd3h"),
+"PostsAppearing": SubResource("Animation_pspnu"),
+"RESET": SubResource("Animation_7pkfb"),
+"ReaderAppearing": SubResource("Animation_3raaa"),
+"TeamsAppearing": SubResource("Animation_n1kyw"),
+"TestAppearing": SubResource("Animation_4n0rb"),
+"VotingAppearing": SubResource("Animation_obd18")
+}
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hb0oq")
+
+[node name="BackGround" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xqaxm")
+
+[node name="PostsMain" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelPost" type="Panel" parent="PostsMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -404.0
+offset_top = 471.0
+offset_right = 390.0
+offset_bottom = 1588.0
+grow_horizontal = 2
+theme_override_styles/panel = ExtResource("6_1xwk5")
+
+[node name="PanelPrizmarine" type="Panel" parent="PostsMain/PanelPost"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -397.0
+offset_top = -94.0
+offset_right = 397.0
+offset_bottom = 1.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f7gc8")
+
+[node name="PostNameLabel" type="Label" parent="PostsMain/PanelPost/PanelPrizmarine"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="PostLabel" type="Label" parent="PostsMain/PanelPost"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="Control" type="Control" parent="PostsMain"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rectangle1" type="Sprite2D" parent="PostsMain/Control"]
+position = Vector2(345.885, 110)
+scale = Vector2(2.47948, 2.34685)
+texture = ExtResource("5_ok65b")
+
+[node name="Label" type="Label" parent="PostsMain/Control"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 52.0
+offset_right = 457.0
+offset_bottom = 145.0
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Посты"
+
+[node name="SettingsButton" type="Button" parent="PostsMain/Control"]
+clip_contents = true
+layout_mode = 0
+offset_left = 54.0
+offset_top = 21.0
+offset_right = 199.0
+offset_bottom = 181.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_iulcc")
+icon = ExtResource("6_nbgql")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="SyncingPanel" type="Panel" parent="PostsMain"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PostsMain/SyncingPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -286.5
+offset_top = -44.5
+offset_right = 286.5
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Синхронизация..."
+
+[node name="TeamsMain" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1530.0
+offset_top = 63.0001
+offset_right = 1530.0
+offset_bottom = 63.0001
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="TeamsMain"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rectangle1" type="Sprite2D" parent="TeamsMain/Control"]
+position = Vector2(345.885, 110)
+scale = Vector2(2.47948, 2.34685)
+texture = ExtResource("6_mvgyg")
+
+[node name="Label" type="Label" parent="TeamsMain/Control"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 52.0
+offset_right = 457.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Команды"
+
+[node name="SettingsButton" type="Button" parent="TeamsMain/Control"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+clip_contents = true
+layout_mode = 0
+offset_left = 54.0
+offset_top = 21.0
+offset_right = 199.0
+offset_bottom = 181.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_iulcc")
+icon = ExtResource("6_nbgql")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="PartyCodeLine" type="TextEdit" parent="TeamsMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -305.0
+offset_top = 438.0
+offset_right = 305.0
+offset_bottom = 525.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("7_rcbko")
+theme_override_styles/focus = ExtResource("7_rcbko")
+placeholder_text = "Код Команды (4 символа)"
+caret_blink = true
+
+[node name="TeamsSumbit" type="Button" parent="TeamsMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -383.0
+offset_top = 572.0
+offset_right = 384.0
+offset_bottom = 720.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = ExtResource("8_r84fj")
+theme_override_styles/hover = ExtResource("8_r84fj")
+theme_override_styles/pressed = ExtResource("8_r84fj")
+theme_override_styles/focus = ExtResource("8_r84fj")
+text = "Подтвердить"
+
+[node name="TextTeam" type="Label" parent="TeamsMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -344.0
+offset_top = 795.0
+offset_right = 344.0
+offset_bottom = 1027.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+
+[node name="SyncingPanel" type="Panel" parent="TeamsMain"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TeamsMain/SyncingPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -286.5
+offset_top = -44.5
+offset_right = 286.5
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Синхронизация..."
+
+[node name="TestMain" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="TestMain"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rectangle1" type="Sprite2D" parent="TestMain/Control"]
+position = Vector2(345.885, 110)
+scale = Vector2(2.47948, 2.34685)
+texture = ExtResource("9_h2jx7")
+
+[node name="Label" type="Label" parent="TestMain/Control"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 52.0
+offset_right = 457.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Тест"
+
+[node name="SettingsButton" type="Button" parent="TestMain/Control"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+clip_contents = true
+layout_mode = 0
+offset_left = 54.0
+offset_top = 21.0
+offset_right = 199.0
+offset_bottom = 181.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_iulcc")
+icon = ExtResource("6_nbgql")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="OutLine" type="Panel" parent="TestMain"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -363.998
+offset_top = -196.0
+offset_right = 364.002
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("11_vqpvr")
+
+[node name="DayTo" type="Label" parent="TestMain/OutLine"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 141.0
+offset_right = 745.0
+offset_bottom = 330.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "осталось 17 дней 
+до тестирования"
+horizontal_alignment = 1
+
+[node name="InLine" type="Panel" parent="TestMain"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -344.998
+offset_top = -183.0
+offset_right = 56.0016
+offset_bottom = -93.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("11_vqpvr")
+
+[node name="VotingMain" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="VotingMain"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rectangle1" type="Sprite2D" parent="VotingMain/Control"]
+position = Vector2(345.885, 110)
+scale = Vector2(2.47948, 2.34685)
+texture = ExtResource("6_mvgyg")
+
+[node name="Label" type="Label" parent="VotingMain/Control"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 52.0
+offset_right = 457.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Голосование"
+
+[node name="SettingsButton" type="Button" parent="VotingMain/Control"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+clip_contents = true
+layout_mode = 0
+offset_left = 54.0
+offset_top = 21.0
+offset_right = 199.0
+offset_bottom = 181.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_iulcc")
+icon = ExtResource("6_nbgql")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="DayTo" type="Label" parent="VotingMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -416.0
+offset_top = 498.0
+offset_right = 416.0
+offset_bottom = 771.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Перейдите по
+ссылке для голосования
+за жанр и книгу"
+horizontal_alignment = 1
+
+[node name="GoLink" type="Button" parent="VotingMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -324.0
+offset_top = 839.0
+offset_right = 325.0
+offset_bottom = 931.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("8_r84fj")
+theme_override_styles/hover = ExtResource("8_r84fj")
+theme_override_styles/pressed = ExtResource("8_r84fj")
+theme_override_styles/focus = ExtResource("8_r84fj")
+text = "Перейти"
+
+[node name="ReaderMain" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1162.0
+offset_right = 1162.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ReaderUp" type="Control" parent="ReaderMain"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 6.0
+offset_right = 6.0
+grow_horizontal = 2
+
+[node name="Text" type="Label" parent="ReaderMain/ReaderUp"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 5337.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_mrf8y")
+text = " Жечь было наслаждением. Какое-то особое наслаждение видеть, как огонь пожирает вещи, как они чернеют и меняются. Медный наконечник брандспойта зажат в кулаках, громадный питон изрыгает на мир ядовитую струю керосина, кровь стучит в висках, а руки кажутся руками диковинного дирижера, исполняющего симфонию огня и разрушения, превращая в пепел изорванные, обуглившиеся страницы истории. Символический шлем, украшенный цифрой 451, низко надвинут на лоб, глаза сверкают оранжевым пламенем при мысли о том, что должно сейчас произойти: он нажимает воспламенитель - и огонь жадно бросается на дом, окрашивая вечернее небо в багрово-желто-черные тона. Он шагает в рое огненно-красных светляков, и больше всего ему хочется сделать сейчас то, чем он так часто забавлялся в детстве,- сунуть в огонь прутик с леденцом, пока книги, как голуби, шелестя крыльями-страницами, умирают на крыльце и на лужайке перед домом, они взлетают в огненном вихре, и черный от копоти ветер уносит их прочь.
+      Жесткая улыбка застыла на лице Монтэга, улыбка-гримаса, которая появляется на губах у человека, когда его вдруг опалит огнем и он стремительно отпрянет назад от его жаркого прикосновения."
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="ReaderMain/ReaderUp/Text"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="ReaderMain"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rectangle1" type="Sprite2D" parent="ReaderMain/Control"]
+position = Vector2(345.885, 110)
+scale = Vector2(2.47948, 2.34685)
+texture = ExtResource("6_mvgyg")
+
+[node name="Label" type="Label" parent="ReaderMain/Control"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 52.0
+offset_right = 457.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Чтение"
+
+[node name="SettingsButton" type="Button" parent="ReaderMain/Control"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+clip_contents = true
+layout_mode = 0
+offset_left = 54.0
+offset_top = 21.0
+offset_right = 199.0
+offset_bottom = 181.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_iulcc")
+icon = ExtResource("6_nbgql")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="AnalyticsMain" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="AnalyticsMain"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rectangle1" type="Sprite2D" parent="AnalyticsMain/Control"]
+position = Vector2(345.885, 110)
+scale = Vector2(2.47948, 2.34685)
+texture = ExtResource("6_mvgyg")
+
+[node name="Label" type="Label" parent="AnalyticsMain/Control"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 52.0
+offset_right = 457.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Аналитика"
+
+[node name="SettingsButton" type="Button" parent="AnalyticsMain/Control"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+clip_contents = true
+layout_mode = 0
+offset_left = 54.0
+offset_top = 21.0
+offset_right = 199.0
+offset_bottom = 181.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_iulcc")
+icon = ExtResource("6_nbgql")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="OutLine" type="Panel" parent="AnalyticsMain"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -363.998
+offset_top = -589.0
+offset_right = 364.002
+offset_bottom = -473.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("11_vqpvr")
+
+[node name="ReadingProgress" type="Label" parent="AnalyticsMain/OutLine"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 141.0
+offset_right = 745.0
+offset_bottom = 330.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Прогресс чтения"
+horizontal_alignment = 1
+
+[node name="InLine" type="Panel" parent="AnalyticsMain"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -344.998
+offset_top = -576.0
+offset_right = -262.998
+offset_bottom = -486.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("11_vqpvr")
+
+[node name="ResultsLabel" type="Label" parent="AnalyticsMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -379.0
+offset_top = 798.0
+offset_right = 379.0
+offset_bottom = 1071.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 70
+text = "Список победителей
+ будет доступен 
+в конце месяца"
+horizontal_alignment = 1
+
+[node name="LeftMenuPanel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftMenu" type="Sprite2D" parent="LeftMenuPanel"]
+position = Vector2(-856, 891.092)
+scale = Vector2(2.07065, 2.0939)
+texture = ExtResource("9_onp4b")
+
+[node name="LeftMenu" type="Sprite2D" parent="LeftMenuPanel/LeftMenu"]
+position = Vector2(4.105, 183.504)
+scale = Vector2(0.990815, 1.40909)
+texture = ExtResource("9_onp4b")
+
+[node name="AccountIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu"]
+position = Vector2(-127.039, -374.345)
+scale = Vector2(1.15534, 1.14251)
+texture = ExtResource("8_atb2h")
+
+[node name="CloseMenu" type="Button" parent="LeftMenuPanel/LeftMenu"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 156.0
+offset_top = -430.0
+offset_right = 737.0
+offset_bottom = 494.0
+
+[node name="Label" type="Label" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -79.6851
+offset_top = -392.612
+offset_right = 85.3149
+offset_bottom = -358.612
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.601223, 0.601223, 0.601223, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 25
+text = "Мой профиль"
+
+[node name="Posts" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -179.0
+offset_top = -315.0
+offset_right = 161.0
+offset_bottom = -247.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("9_3qjar")
+theme_override_styles/hover = ExtResource("9_3qjar")
+theme_override_styles/pressed = ExtResource("9_3qjar")
+theme_override_styles/focus = ExtResource("9_3qjar")
+text = "посты"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Posts"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("10_h6vsb")
+
+[node name="Party" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -178.688
+offset_top = -245.996
+offset_right = 161.312
+offset_bottom = -177.996
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("9_3qjar")
+theme_override_styles/hover = ExtResource("9_3qjar")
+theme_override_styles/pressed = ExtResource("9_3qjar")
+theme_override_styles/focus = ExtResource("9_3qjar")
+text = "команды"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Party"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("11_ndjow")
+
+[node name="Test" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -178.688
+offset_top = -177.703
+offset_right = 161.312
+offset_bottom = -109.703
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("9_3qjar")
+theme_override_styles/hover = ExtResource("9_3qjar")
+theme_override_styles/pressed = ExtResource("9_3qjar")
+theme_override_styles/focus = ExtResource("9_3qjar")
+text = "тест"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Test"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("12_0hikv")
+
+[node name="Voting" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -178.688
+offset_top = -106.544
+offset_right = 161.312
+offset_bottom = -38.5438
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("9_3qjar")
+theme_override_styles/hover = ExtResource("9_3qjar")
+theme_override_styles/pressed = ExtResource("9_3qjar")
+theme_override_styles/focus = ExtResource("9_3qjar")
+text = "голосование"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Voting"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("13_wb5db")
+
+[node name="Reader" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -178.688
+offset_top = -36.3399
+offset_right = 161.312
+offset_bottom = 31.6601
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("9_3qjar")
+theme_override_styles/hover = ExtResource("9_3qjar")
+theme_override_styles/pressed = ExtResource("9_3qjar")
+theme_override_styles/focus = ExtResource("9_3qjar")
+text = "чтение книги"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Reader"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("14_6swf5")
+
+[node name="Analytics" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -178.688
+offset_top = 34.8191
+offset_right = 161.312
+offset_bottom = 102.819
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("9_3qjar")
+theme_override_styles/hover = ExtResource("9_3qjar")
+theme_override_styles/pressed = ExtResource("9_3qjar")
+theme_override_styles/focus = ExtResource("9_3qjar")
+text = "аналитика"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Analytics"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("15_fcs27")
+
+[node name="Settings" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -178.688
+offset_top = 104.545
+offset_right = 161.312
+offset_bottom = 172.545
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_d3osk")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("9_3qjar")
+theme_override_styles/hover = ExtResource("9_3qjar")
+theme_override_styles/pressed = ExtResource("9_3qjar")
+theme_override_styles/focus = ExtResource("9_3qjar")
+text = "настройки"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Settings"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("16_wpl8v")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bjwwe")
+}
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_hvtll")
+}
+
+[connection signal="button_down" from="PostsMain/Control/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="TeamsMain/Control/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="TeamsMain/TeamsSumbit" to="." method="_on_teams_sumbit_button_down"]
+[connection signal="button_down" from="TestMain/Control/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="VotingMain/Control/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="VotingMain/GoLink" to="." method="_on_go_link_button_down"]
+[connection signal="pressed" from="ReaderMain/ReaderUp/Text/Button" to="." method="_on_button_pressed"]
+[connection signal="button_down" from="ReaderMain/Control/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="AnalyticsMain/Control/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="LeftMenuPanel/LeftMenu/CloseMenu" to="." method="_on_close_menu_button_down"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Posts" to="." method="_on_posts_button_up"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Party" to="." method="_on_party_button_up"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Test" to="." method="_on_test_button_up"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Voting" to="." method="_on_voting_button_up"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Reader" to="." method="_on_reader_button_up"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Analytics" to="." method="_on_analytics_button_up"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Settings" to="." method="_on_settings_button_up"]

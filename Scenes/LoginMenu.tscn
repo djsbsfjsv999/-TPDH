@@ -1,0 +1,380 @@
+[gd_scene load_steps=16 format=3 uid="uid://c6sjdf8eq8tio"]
+
+[ext_resource type="Script" path="res://Scripts/LoginMenu.gd" id="1_qhfda"]
+[ext_resource type="FontFile" uid="uid://g2ut8ie8krlq" path="res://Styles/RobotoMono.ttf" id="3_5u027"]
+[ext_resource type="Texture2D" uid="uid://ccdm654amyqpt" path="res://Images/Ellipse 6.png" id="3_7gsje"]
+[ext_resource type="StyleBox" uid="uid://cl04miix5nbso" path="res://Styles/StyleInput1.tres" id="3_uin31"]
+[ext_resource type="FontFile" uid="uid://b71iknkyd1hqd" path="res://Styles/comfortaa-bold.ttf" id="4_584bc"]
+[ext_resource type="StyleBox" uid="uid://b6dgccb0lig6b" path="res://Styles/StyleButton1.tres" id="5_wajyh"]
+[ext_resource type="Texture2D" uid="uid://cyppn7wspi88y" path="res://Images/Logo.png" id="6_es4ek"]
+[ext_resource type="StyleBox" uid="uid://dp2h0280gxk2b" path="res://Styles/StyleButtonSpec1.tres" id="7_qw64h"]
+[ext_resource type="Texture2D" uid="uid://bxb2g3jqmwx7s" path="res://Images/Ellipse 5.png" id="9_cjye1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qpnhr"]
+bg_color = Color(0.470588, 0.470588, 0.470588, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ebpny"]
+
+[sub_resource type="Animation" id="Animation_3hlxb"]
+resource_name = "MovingDown"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ellipse6:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(200, -488), Vector2(427, 374)]
+}
+
+[sub_resource type="Animation" id="Animation_xv3lf"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("crossline:size:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(200, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("crossline:size:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(6, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("crossline:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(26, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("crossline:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(76, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("crossline:scale:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.999997, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("crossline:scale:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Ellipse6:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(200, -488)]
+}
+
+[sub_resource type="Animation" id="Animation_diqin"]
+resource_name = "RegLog"
+length = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("crossline:size:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(200, -0.25, 0, 0.25, 0, 200, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("crossline:size:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(6, -0.25, 0, 0.25, 0, 6, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("crossline:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(26, -0.25, 0, 0.25, 0, 289, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("crossline:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(76, -0.25, 0, 0.25, 0, 76, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("crossline:scale:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0.999997, -0.25, 0, 0.25, 0, 0.399996, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("crossline:scale:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kr6st"]
+_data = {
+"MovingDown": SubResource("Animation_3hlxb"),
+"RESET": SubResource("Animation_xv3lf"),
+"RegLog": SubResource("Animation_diqin")
+}
+
+[node name="LoginMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qhfda")
+
+[node name="BackGround" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_qpnhr")
+
+[node name="Ellipse6" type="Sprite2D" parent="."]
+position = Vector2(200, -488)
+scale = Vector2(2.33965, 2.82443)
+texture = ExtResource("3_7gsje")
+
+[node name="Ellipse5" type="Sprite2D" parent="."]
+position = Vector2(-81, 1453)
+scale = Vector2(4.98259, 3.57918)
+texture = ExtResource("9_cjye1")
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -342.0
+offset_top = 803.0
+offset_right = 342.0
+offset_bottom = 1713.0
+grow_horizontal = 2
+
+[node name="Email" type="TextEdit" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 3.0
+offset_right = 249.0
+offset_bottom = 90.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_584bc")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("3_uin31")
+theme_override_styles/focus = ExtResource("3_uin31")
+placeholder_text = "Электронная почта"
+caret_blink = true
+
+[node name="Password" type="TextEdit" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 153.0
+offset_right = 249.0
+offset_bottom = 240.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_584bc")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("3_uin31")
+theme_override_styles/focus = ExtResource("3_uin31")
+placeholder_text = "Пароль"
+caret_blink = true
+
+[node name="Code" type="TextEdit" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 310.0
+offset_right = 249.0
+offset_bottom = 397.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_584bc")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("3_uin31")
+theme_override_styles/focus = ExtResource("3_uin31")
+placeholder_text = "Код(опционально)"
+caret_blink = true
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -51.5
+offset_top = 446.0
+offset_right = 51.5
+offset_bottom = 469.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_5u027")
+theme_override_font_sizes/font_size = 30
+
+[node name="Sumbit" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -324.0
+offset_top = 668.0
+offset_right = 325.0
+offset_bottom = 760.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_584bc")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("5_wajyh")
+theme_override_styles/hover = ExtResource("5_wajyh")
+theme_override_styles/pressed = ExtResource("5_wajyh")
+theme_override_styles/focus = ExtResource("5_wajyh")
+text = "Подтвердить"
+
+[node name="Logo" type="Sprite2D" parent="Panel"]
+position = Vector2(350, -314)
+scale = Vector2(2.15172, 2.15172)
+texture = ExtResource("6_es4ek")
+
+[node name="LogInButton" type="Button" parent="."]
+layout_mode = 1
+offset_left = 228.0
+offset_top = 4.0
+offset_right = 426.0
+offset_bottom = 114.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_5u027")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("7_qw64h")
+theme_override_styles/hover = ExtResource("7_qw64h")
+theme_override_styles/pressed = ExtResource("7_qw64h")
+theme_override_styles/disabled = ExtResource("7_qw64h")
+theme_override_styles/focus = ExtResource("7_qw64h")
+text = "Вход"
+
+[node name="SignUpButton" type="Button" parent="."]
+layout_mode = 1
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 222.0
+offset_bottom = 110.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_5u027")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("7_qw64h")
+theme_override_styles/hover = ExtResource("7_qw64h")
+theme_override_styles/pressed = ExtResource("7_qw64h")
+theme_override_styles/disabled = ExtResource("7_qw64h")
+theme_override_styles/focus = ExtResource("7_qw64h")
+text = "Регистрация"
+
+[node name="crossline" type="Panel" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 26.0
+offset_top = 76.0
+offset_right = 226.0
+offset_bottom = 82.0
+scale = Vector2(0.999997, 1)
+theme_override_styles/panel = SubResource("StyleBoxFlat_ebpny")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kr6st")
+}
+
+[connection signal="button_down" from="Panel/Sumbit" to="." method="_on_sumbit_button_down"]
+[connection signal="button_down" from="LogInButton" to="." method="_on_log_in_button_button_down"]
+[connection signal="button_down" from="SignUpButton" to="." method="_on_sign_up_button_button_down"]

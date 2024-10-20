@@ -1,0 +1,853 @@
+[gd_scene load_steps=31 format=3 uid="uid://cosqstfxv1327"]
+
+[ext_resource type="Script" path="res://Scenes/MainMenuAdmin.gd" id="1_x3aoq"]
+[ext_resource type="StyleBox" uid="uid://dd0cvg16mnkfx" path="res://Styles/StylePanel1.tres" id="2_evcrj"]
+[ext_resource type="FontFile" uid="uid://b71iknkyd1hqd" path="res://Styles/comfortaa-bold.ttf" id="3_67s65"]
+[ext_resource type="Texture2D" uid="uid://85j472mj7y3m" path="res://Images/Rectangle1.png" id="4_2334h"]
+[ext_resource type="Texture2D" uid="uid://chor6st64x3uj" path="res://Images/Icons/SettingsIcon2.png" id="5_2yq0g"]
+[ext_resource type="Texture2D" uid="uid://by5l6j6co4rsl" path="res://Images/Rectangle5.png" id="6_f6f71"]
+[ext_resource type="StyleBox" uid="uid://b6dgccb0lig6b" path="res://Styles/StyleButton1.tres" id="8_k3te6"]
+[ext_resource type="Texture2D" uid="uid://dtm5xepbp6k8m" path="res://Images/Rectangle3.png" id="9_hgm0b"]
+[ext_resource type="StyleBox" uid="uid://dw83uwymjl4d4" path="res://Styles/StylePanel2.tres" id="10_1mj6v"]
+[ext_resource type="Texture2D" uid="uid://bfqympbnpg04j" path="res://Images/LeftMenu.png" id="11_o84e2"]
+[ext_resource type="Texture2D" uid="uid://cn865u8nkp8pc" path="res://Images/Icons/AccountIcon.png" id="12_measd"]
+[ext_resource type="StyleBox" uid="uid://ca8jd8d7dqdms" path="res://Styles/StyleButton2.tres" id="13_vse7m"]
+[ext_resource type="Texture2D" uid="uid://bsuikotg1vjs1" path="res://Images/Icons/HellBoardIcon.png" id="14_m34f7"]
+[ext_resource type="Texture2D" uid="uid://cwp17tg41lww1" path="res://Images/Icons/RatesIcon.png" id="16_mrfh2"]
+[ext_resource type="Texture2D" uid="uid://banocqbautjfs" path="res://Images/Icons/VotingIcon.png" id="17_enakp"]
+[ext_resource type="Texture2D" uid="uid://cuouofaj857ny" path="res://Images/Icons/StatsIcon.png" id="19_1d8j1"]
+[ext_resource type="Texture2D" uid="uid://bceej1jhj5gnj" path="res://Images/Icons/SettingsIcon1.png" id="20_5gsbc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xqaxm"]
+bg_color = Color(0.470588, 0.470588, 0.470588, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f7gc8"]
+bg_color = Color(0.00392157, 0.556863, 0.564706, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4s70r"]
+content_margin_left = 60.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iulcc"]
+texture = ExtResource("5_2yq0g")
+
+[sub_resource type="Animation" id="Animation_4y2ci"]
+resource_name = "LeftPanel"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeftMenuPanel/LeftMenu:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-856, 891.092), Vector2(366, 891.092)]
+}
+
+[sub_resource type="Animation" id="Animation_b2vhb"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeftMenuPanel/LeftMenu:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-856, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LeftMenuPanel/LeftMenu:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(891.092, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PostsMain:anchors_preset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TestMain:anchors_preset")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("VotingMain:anchors_preset")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnalyticsMain:layout_mode")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bjwwe"]
+_data = {
+"LeftPanel": SubResource("Animation_4y2ci"),
+"RESET": SubResource("Animation_b2vhb")
+}
+
+[sub_resource type="Animation" id="Animation_tfd3h"]
+resource_name = "AnalyticsAppearing"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnalyticsMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1163, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_pspnu"]
+resource_name = "PostsAppearing"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PostsMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1882, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_7pkfb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PostsMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TestMain:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("VotingMain:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnalyticsMain:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4n0rb"]
+resource_name = "TestAppearing"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TestMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1280, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_obd18"]
+resource_name = "VotingAppearing"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VotingMain:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1162, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hvtll"]
+_data = {
+"AnalyticsAppearing": SubResource("Animation_tfd3h"),
+"PostsAppearing": SubResource("Animation_pspnu"),
+"RESET": SubResource("Animation_7pkfb"),
+"TestAppearing": SubResource("Animation_4n0rb"),
+"VotingAppearing": SubResource("Animation_obd18")
+}
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x3aoq")
+
+[node name="BackGround" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xqaxm")
+
+[node name="PostsMain" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelPost" type="Panel" parent="PostsMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -404.0
+offset_top = 471.0
+offset_right = 390.0
+offset_bottom = 1309.0
+grow_horizontal = 2
+theme_override_styles/panel = ExtResource("2_evcrj")
+
+[node name="PanelPrizmarine" type="Panel" parent="PostsMain/PanelPost"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -397.0
+offset_top = -94.0
+offset_right = 397.0
+offset_bottom = 1.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f7gc8")
+
+[node name="LabelPost" type="Label" parent="PostsMain/PanelPost/PanelPrizmarine"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="LabelPost" type="TextEdit" parent="PostsMain/PanelPost"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.450648, 0.450648, 0.450648, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_4s70r")
+placeholder_text = "Введите ваш пост здесь, и его увидят все участники"
+wrap_mode = 1
+
+[node name="Sumbit" type="Button" parent="PostsMain/PanelPost"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -324.0
+offset_top = 930.0
+offset_right = 325.0
+offset_bottom = 1022.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("8_k3te6")
+theme_override_styles/hover = ExtResource("8_k3te6")
+theme_override_styles/pressed = ExtResource("8_k3te6")
+theme_override_styles/focus = ExtResource("8_k3te6")
+text = "Синхронизировать"
+
+[node name="Control" type="Control" parent="PostsMain"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rectangle1" type="Sprite2D" parent="PostsMain/Control"]
+position = Vector2(345.885, 110)
+scale = Vector2(2.47948, 2.34685)
+texture = ExtResource("4_2334h")
+
+[node name="Label" type="Label" parent="PostsMain/Control"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 52.0
+offset_right = 457.0
+offset_bottom = 145.0
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 70
+text = "Посты"
+
+[node name="SettingsButton" type="Button" parent="PostsMain/Control"]
+clip_contents = true
+layout_mode = 0
+offset_left = 54.0
+offset_top = 21.0
+offset_right = 199.0
+offset_bottom = 181.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_iulcc")
+icon = ExtResource("5_2yq0g")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="SyncingPanel" type="Panel" parent="PostsMain"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PostsMain/SyncingPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -286.5
+offset_top = -44.5
+offset_right = 286.5
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 70
+text = "Синхронизация..."
+
+[node name="TestMain" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="TestMain"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rectangle1" type="Sprite2D" parent="TestMain/Control"]
+position = Vector2(345.885, 110)
+scale = Vector2(2.47948, 2.34685)
+texture = ExtResource("9_hgm0b")
+
+[node name="Label" type="Label" parent="TestMain/Control"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 52.0
+offset_right = 457.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 70
+text = "Тест"
+
+[node name="SettingsButton" type="Button" parent="TestMain/Control"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+clip_contents = true
+layout_mode = 0
+offset_left = 54.0
+offset_top = 21.0
+offset_right = 199.0
+offset_bottom = 181.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_iulcc")
+icon = ExtResource("5_2yq0g")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="OutLine" type="Panel" parent="TestMain"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -363.998
+offset_top = -196.0
+offset_right = 364.002
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("10_1mj6v")
+
+[node name="DayTo" type="Label" parent="TestMain/OutLine"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 141.0
+offset_right = 745.0
+offset_bottom = 330.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 70
+text = "осталось 17 дней 
+до тестирования"
+horizontal_alignment = 1
+
+[node name="InLine" type="Panel" parent="TestMain"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -344.998
+offset_top = -183.0
+offset_right = 56.0016
+offset_bottom = -93.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("10_1mj6v")
+
+[node name="VotingMain" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="VotingMain"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rectangle1" type="Sprite2D" parent="VotingMain/Control"]
+position = Vector2(345.885, 110)
+scale = Vector2(2.47948, 2.34685)
+texture = ExtResource("6_f6f71")
+
+[node name="Label" type="Label" parent="VotingMain/Control"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 52.0
+offset_right = 457.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 70
+text = "Голосование"
+
+[node name="SettingsButton" type="Button" parent="VotingMain/Control"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+clip_contents = true
+layout_mode = 0
+offset_left = 54.0
+offset_top = 21.0
+offset_right = 199.0
+offset_bottom = 181.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_iulcc")
+icon = ExtResource("5_2yq0g")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="DayTo" type="Label" parent="VotingMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -416.0
+offset_top = 498.0
+offset_right = 416.0
+offset_bottom = 771.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 70
+text = "Перейдите по
+ссылке для просмотра 
+результатов голосования
+за жанр и книгу"
+horizontal_alignment = 1
+
+[node name="GoLink" type="Button" parent="VotingMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -324.0
+offset_top = 913.0
+offset_right = 325.0
+offset_bottom = 1005.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("8_k3te6")
+theme_override_styles/hover = ExtResource("8_k3te6")
+theme_override_styles/pressed = ExtResource("8_k3te6")
+theme_override_styles/focus = ExtResource("8_k3te6")
+text = "Перейти"
+
+[node name="AnalyticsMain" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 7560.0
+offset_bottom = 13440.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="AnalyticsMain"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rectangle1" type="Sprite2D" parent="AnalyticsMain/Control"]
+position = Vector2(345.885, 110)
+scale = Vector2(2.47948, 2.34685)
+texture = ExtResource("6_f6f71")
+
+[node name="Label" type="Label" parent="AnalyticsMain/Control"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 52.0
+offset_right = 457.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 70
+text = "Аналитика"
+
+[node name="SettingsButton" type="Button" parent="AnalyticsMain/Control"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+clip_contents = true
+layout_mode = 0
+offset_left = 54.0
+offset_top = 21.0
+offset_right = 199.0
+offset_bottom = 181.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_iulcc")
+icon = ExtResource("5_2yq0g")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="OutLine" type="Panel" parent="AnalyticsMain"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -363.998
+offset_top = -589.0
+offset_right = 364.002
+offset_bottom = -473.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("10_1mj6v")
+
+[node name="ReadingProgress" type="Label" parent="AnalyticsMain/OutLine"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 141.0
+offset_right = 745.0
+offset_bottom = 330.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 70
+text = "Прогресс чтения"
+horizontal_alignment = 1
+
+[node name="InLine" type="Panel" parent="AnalyticsMain"]
+modulate = Color(0.00392157, 0.556863, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -344.998
+offset_top = -576.0
+offset_right = -262.998
+offset_bottom = -486.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("10_1mj6v")
+
+[node name="ResultsLabel" type="Label" parent="AnalyticsMain"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -379.0
+offset_top = 798.0
+offset_right = 379.0
+offset_bottom = 1071.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 70
+text = "Список победителей
+ будет доступен 
+в конце месяца"
+horizontal_alignment = 1
+
+[node name="LeftMenuPanel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftMenu" type="Sprite2D" parent="LeftMenuPanel"]
+position = Vector2(-856, 891.092)
+scale = Vector2(2.07065, 2.0939)
+texture = ExtResource("11_o84e2")
+
+[node name="LeftMenu" type="Sprite2D" parent="LeftMenuPanel/LeftMenu"]
+position = Vector2(4.10498, 173.236)
+scale = Vector2(0.990815, 1.38861)
+texture = ExtResource("11_o84e2")
+
+[node name="AccountIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu"]
+position = Vector2(-127.039, -374.345)
+scale = Vector2(1.15534, 1.14251)
+texture = ExtResource("12_measd")
+
+[node name="CloseMenu" type="Button" parent="LeftMenuPanel/LeftMenu"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 156.0
+offset_top = -430.0
+offset_right = 737.0
+offset_bottom = 494.0
+
+[node name="Label" type="Label" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -79.6851
+offset_top = -392.612
+offset_right = 85.3149
+offset_bottom = -358.612
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.601223, 0.601223, 0.601223, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 25
+text = "Мой профиль"
+
+[node name="Posts" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -179.0
+offset_top = -315.0
+offset_right = 161.0
+offset_bottom = -247.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("13_vse7m")
+theme_override_styles/hover = ExtResource("13_vse7m")
+theme_override_styles/pressed = ExtResource("13_vse7m")
+theme_override_styles/focus = ExtResource("13_vse7m")
+text = "публикация постов"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Posts"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("14_m34f7")
+
+[node name="Test" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -178.688
+offset_top = -243.131
+offset_right = 161.312
+offset_bottom = -175.131
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("13_vse7m")
+theme_override_styles/hover = ExtResource("13_vse7m")
+theme_override_styles/pressed = ExtResource("13_vse7m")
+theme_override_styles/focus = ExtResource("13_vse7m")
+text = "редактор теста"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Test"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("16_mrfh2")
+
+[node name="Voting" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -178.688
+offset_top = -171.972
+offset_right = 161.312
+offset_bottom = -103.972
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("13_vse7m")
+theme_override_styles/hover = ExtResource("13_vse7m")
+theme_override_styles/pressed = ExtResource("13_vse7m")
+theme_override_styles/focus = ExtResource("13_vse7m")
+text = "итоги голосования"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Voting"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("17_enakp")
+
+[node name="Analytics" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -178.688
+offset_top = -97.4698
+offset_right = 161.312
+offset_bottom = -29.4699
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("13_vse7m")
+theme_override_styles/hover = ExtResource("13_vse7m")
+theme_override_styles/pressed = ExtResource("13_vse7m")
+theme_override_styles/focus = ExtResource("13_vse7m")
+text = "аналитика"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Analytics"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("19_1d8j1")
+
+[node name="Settings" type="Button" parent="LeftMenuPanel/LeftMenu"]
+offset_left = -178.688
+offset_top = -27.7439
+offset_right = 161.312
+offset_bottom = 40.2561
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_67s65")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("13_vse7m")
+theme_override_styles/hover = ExtResource("13_vse7m")
+theme_override_styles/pressed = ExtResource("13_vse7m")
+theme_override_styles/focus = ExtResource("13_vse7m")
+text = "настройки"
+alignment = 0
+
+[node name="HellBoardIcon" type="Sprite2D" parent="LeftMenuPanel/LeftMenu/Settings"]
+position = Vector2(36.5328, 36.0509)
+scale = Vector2(1.03487, 1.02338)
+texture = ExtResource("20_5gsbc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bjwwe")
+}
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_hvtll")
+}
+
+[connection signal="button_down" from="PostsMain/PanelPost/Sumbit" to="." method="_on_sumbit_button_down"]
+[connection signal="button_down" from="PostsMain/Control/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="TestMain/Control/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="VotingMain/Control/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="VotingMain/GoLink" to="." method="_on_go_link_button_down"]
+[connection signal="button_down" from="AnalyticsMain/Control/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="LeftMenuPanel/LeftMenu/CloseMenu" to="." method="_on_close_menu_button_down"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Posts" to="." method="_on_posts_button_up"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Test" to="." method="_on_test_button_up"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Voting" to="." method="_on_voting_button_up"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Analytics" to="." method="_on_analytics_button_up"]
+[connection signal="button_up" from="LeftMenuPanel/LeftMenu/Settings" to="." method="_on_settings_button_up"]
